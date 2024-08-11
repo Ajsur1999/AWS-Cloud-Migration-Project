@@ -16,3 +16,26 @@ The first milestone was to design the architecture using AWS services and presen
 
 Below is the detailed explanation of how each AWS service was applied to the cloud solution with a brief explanation why a particular practice was applied. These services are the foundation of the proposed architecture and will be used to build the data lake, data warehouse, and dashboards for the customer.
 
+<img width="36" alt="image" src="https://github.com/user-attachments/assets/e4b03d49-f6f9-499b-b4d2-2d1e5644e044"> Simple Storage Service (S3)
+
+This service was used to temporarily store data provided by the customer.
+Created a bucket with a name: csf-ict-251572410613 to store the data related to this customer
+Created 3 folder inside the bucket:
+input - to upload the raw data file, csv manually, json by an API
+output - to store clean data, in parquet format
+athena-results - to store athena queried results
+
+
+<img width="41" alt="image" src="https://github.com/user-attachments/assets/06d5acd8-96de-4ed6-8cd0-55274a1afed7">  Lambda
+
+Automated 4 functions:
+TriggerGlueCrawlerCSV
+Trigger - A new object created in S3 input folder
+This function triggers the Glue Crawler to perform data crawling over any new object added in the input bucket.
+The code can be seen below:
+
+<img width="176" alt="image" src="https://github.com/user-attachments/assets/5b7b4dea-a9be-4e61-a2fd-09b3928a05fa">
+
+
+
+
