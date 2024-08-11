@@ -34,14 +34,28 @@ Trigger - A new object created in S3 input folder
 This function triggers the Glue Crawler to perform data crawling over any new object added in the input bucket.
 The code can be seen below:
 
-<img width="176" alt="image" src="https://github.com/user-attachments/assets/5b7b4dea-a9be-4e61-a2fd-09b3928a05fa">
-
+![image](https://github.com/user-attachments/assets/35bd9f57-9cbf-4fa1-944d-77b9da89ef0c)
 
 TriggerGlueJob
 Trigger - EventBridge: CsvCrawlerFinished
-This function triggers GlueJob to transform extracted data into parquet format 
+This function triggers GlueJob to transform extracted data into parquet format The code can be seen below:
+
+![image](https://github.com/user-attachments/assets/38ca0de2-d0c6-4d21-8c82-7d08e9ab99b5)
+
+
+TriggerGlueCrawlerParquet
+Trigger - EventBridge: CsvParquetJobFinished
+This function triggers the Glue Crawler to crawl the parquet data after it has gone through the ETL stage.
 The code can be seen below:
 
-![image](https://github.com/user-attachments/assets/ac6e1594-79fc-4a6d-977b-ebda83c2d82f)
+![image](https://github.com/user-attachments/assets/98fdf94b-523a-47ae-91ba-5378b3032a30)
 
+
+LoadDataRedshift ( in theory )
+Trigger - a new object created in s3 output folder
+This function loads parquet files from s3 output folder to Redshift Cluster The code can be seen below:
+ 
+![image](https://github.com/user-attachments/assets/441aca79-75d9-46cd-8b00-d48320bb1c03)
+
+<img width="381" alt="image" src="https://github.com/user-attachments/assets/68200a84-a6e3-4c90-ac17-a9af9210d849">
 
