@@ -9,3 +9,10 @@ The ultimate goal is to build a data lake, data warehouse and provide dashboards
 
 The first milestone was to design the architecture using AWS services and present it to the class. The architecture was developed using the draw.io tool which included our AWS services that we chose. You can see the diagram below:
 
+<img width="502" alt="image" src="https://github.com/user-attachments/assets/d75ee3ed-4da1-43c0-9a75-98c261a3778a">
+
+
+**AWS Services**
+
+Below is the detailed explanation of how each AWS service was applied to the cloud solution with a brief explanation why a particular practice was applied. These services are the foundation of the proposed architecture and will be used to build the data lake, data warehouse, and dashboards for the customer.
+
