@@ -37,5 +37,9 @@ The code can be seen below:
 <img width="176" alt="image" src="https://github.com/user-attachments/assets/5b7b4dea-a9be-4e61-a2fd-09b3928a05fa">
 
 
+TriggerGlueJob
+Trigger - EventBridge: CsvCrawlerFinished
+This function triggers GlueJob to transform extracted data into parquet format The code can be seen below:
+![image](https://github.com/user-attachments/assets/ac6e1594-79fc-4a6d-977b-ebda83c2d82f)
 
 
