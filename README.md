@@ -6,5 +6,6 @@ The ultimate goal is to build a data lake, data warehouse and provide dashboards
 
 **Implementation**
 **Designing the Architecture**
+
 The first milestone was to design the architecture using AWS services and present it to the class. The architecture was developed using the draw.io tool which included our AWS services that we chose. You can see the diagram below:
 
