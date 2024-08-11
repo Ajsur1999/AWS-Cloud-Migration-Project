@@ -166,12 +166,19 @@ We have utilized serverless computing services like AWS Lambda, AWS Glue for dat
  
 
 **Challenges**
+
 ●	Redshift
+
 ●	Uploading API data with Lambda function to S3
+
 ●	Learner Lab Limitations
+
 ●	Implementation of the project in the actual AWS account
+
 ●	Ability to experiment due to possible charge
+
 ●	Schedule conflict
+
 ●	Athena
 
 
